@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Dodge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="game-shell" aria-label="משחק התחמקויות">
+        <div id="score" aria-live="polite">ניקוד: 0</div>
+
+        <div id="start-screen" class="overlay visible">
+          <h1>🍽️ Food Dodge</h1>
+          <p>התחמקו מהאוכל הנופל כמה שיותר זמן!</p>
+          <p>שליטה: ⬅️ ➡️ או A / D</p>
+          <button id="start-button">התחל משחק</button>
+        </div>
+
+        <div id="game-over-screen" class="overlay" aria-hidden="true">
+          <h2>נפסלת!</h2>
+          <p id="final-score">ניקוד סופי: 0</p>
+          <button id="restart-button">שחק שוב</button>
+        </div>
+
+        <div id="player" aria-label="שחקן"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
